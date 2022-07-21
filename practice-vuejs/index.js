@@ -7,6 +7,11 @@ var App = {
       name: "Sam!",
     };
   },
+  methods: {
+    changeMessage: function () {
+      this.message = "Whoaaa";
+    },
+  },
 };
 
 Vue.createApp(App).mount("#app");
