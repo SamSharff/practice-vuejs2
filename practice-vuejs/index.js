@@ -4,6 +4,7 @@ var App = {
   data: function () {
     return {
       message: "Hello from JavaScript!",
+      name: "Sam!",
     };
   },
 };
