@@ -13,6 +13,9 @@
       <h1>{{ name }}</h1>
       <button v-on:click="changeMessage()">Click me</button>
       <input type="text" v-model="name">
+      <div v-for="chocolate in chocolates"> {{ chocolate }}</div>
+      <input type="text" v-model="newChocolate">
+      <button v-on:click="addChocolate()">Add more chocolate yo!</button>
     </div>
   </body>
 </html>
