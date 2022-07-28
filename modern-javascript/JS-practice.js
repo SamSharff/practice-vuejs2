@@ -18,7 +18,7 @@
 // }
 // console.log(roundUp(4.6, 5)); // 10
 
-// *************************
+// **************************************************
 // RUBY TO JS
 // Read about the Ruby `reduce` method. Then refactor the code below using `reduce`.
 
@@ -38,7 +38,7 @@
 // }
 
 // console.log(numbers.reduce(reduceNumbers));
-// *************************
+// **************************************************
 
 // Write a function that returns the sum of all numbers in a given array.
 
@@ -49,7 +49,22 @@
 
 // Explanation: (1 + 2 + 3 + 4) = 10
 
-function reduceSum(num, sum); {
+// ruby
+// def reduce_sum(input_array)             
+//   sum = 0                              
+//   index = 0                               
+
+//   while index < input_array.length        
+//     sum = sum + input_array[index]        
+//     index += 1                            
+//   end
+//   return sum                              
+// end
+
+
+function reduceSum(); {
 let sum = sum + num;
 };
 reduceSum();
+
+// *************************
