@@ -1,5 +1,7 @@
 <script>
 /* global mapboxgl */
+// import FullscreenSlider from "../modules/fullscreen_slider/";
+
 export default {
   mounted: function () {
     this.mappy();
@@ -19,7 +21,20 @@ export default {
       map.on("style.load", () => {
         map.setFog({}); // Set the default atmosphere style
       });
+      // create the popup
+      const popup = new mapboxgl.Popup({ offset: 25 }).setText("This is where I live! It is Camden!");
+      const marker1 = new mapboxgl.Marker()
+        .setLngLat([-69.0648, 44.2098])
+        .setPopup(popup) // sets a popup on this marker
+        .addTo(map);
+      console.log(marker1);
     },
+    // slider: function () {
+    //   const fsSlider = new FullscreenSlider(document, {
+    //     x: window.innerWidth,
+    //     y: window.innerHeight,
+    //   });
+    // },
   },
 };
 </script>

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+// import FullscreenSlider from "../modules/fullscreen_slider/";
 
 const routes = [
   {
