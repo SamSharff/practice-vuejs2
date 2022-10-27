@@ -21,9 +21,14 @@ export default {
       map.on("style.load", () => {
         map.setFog({}); // Set the default atmosphere style
       });
+
       // create the popup
       const popup = new mapboxgl.Popup({ offset: 25 }).setText("This is where I live! It is Camden!");
-      const marker1 = new mapboxgl.Marker()
+
+      // create DOM element for the marker
+      const el = document.createElement("div");
+      el.id = "marker";
+      const marker1 = new mapboxgl.Marker(el)
         .setLngLat([-69.0648, 44.2098])
         .setPopup(popup) // sets a popup on this marker
         .addTo(map);
@@ -51,5 +56,16 @@ export default {
   top: 0;
   bottom: 0;
   width: 100%;
+}
+#marker {
+  background-image: url("https://www.hartstoneinn.com/wp-content/uploads/2020/05/camden-town-streets-featured-1476x1026.jpg");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.mapboxgl-popup {
+  max-width: 200px;
 }
 </style>
