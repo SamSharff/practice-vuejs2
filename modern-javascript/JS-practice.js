@@ -1,13 +1,30 @@
-// // ***** Math.floor, Math.random, Math.ceil practice  ***** //
+// ***** Math.floor, Math.random, Math.ceil practice  ***** //
 
-// // Math.random practice
+// Math.random practice - returns random number (here, multiplied by 100)
 // console.log(Math.random() * 100);
+// console.log(Math.random());
 
-// // Math.random and Math.floor (function)
+// // // Math.random and Math.floor (function) - rounds a number DOWN to the nearest integer
 // function randomNum() {
 //   console.log(Math.floor(Math.random() * 50));
 // }
 // randomNum();
+
+// expected output
+let a = Math.floor(0.6);
+a = 0;
+let b = Math.floor(0.4);
+b = 0;
+let c = Math.floor(5);
+c = 5;
+let d = Math.floor(5.1);
+d = 5;
+let e = Math.floor(-5.1);
+e = -6;
+let f = Math.floor(-5.9);
+f = -6;
+
+console.log(a, b, c, d, e, f);
 
 // // Math.ceil practice
 // console.log(Math.ceil(43.8)); // 44
@@ -50,21 +67,20 @@
 // Explanation: (1 + 2 + 3 + 4) = 10
 
 // ruby
-// def reduce_sum(input_array)             
-//   sum = 0                              
-//   index = 0                               
+// def reduce_sum(input_array)
+//   sum = 0
+//   index = 0
 
-//   while index < input_array.length        
-//     sum = sum + input_array[index]        
-//     index += 1                            
+//   while index < input_array.length
+//     sum = sum + input_array[index]
+//     index += 1
 //   end
-//   return sum                              
+//   return sum
 // end
 
-
-function reduceSum(); {
-let sum = sum + num;
-};
-reduceSum();
+// function reduceSum(); {
+// let sum = sum + num;
+// };
+// reduceSum();
 
 // *************************
